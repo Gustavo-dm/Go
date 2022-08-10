@@ -119,3 +119,97 @@
         y = int(x)
         fmt.Printf("%T, %v", y, y) // -> int, 42
         }
+
+# Cap. 5
+
+# Nível 2 – 1
+
+    - Escreva um programa que mostre um número em decimal, binário, e hexadecimal.
+
+## Solução Ex.1
+
+    func main() {
+     x := 100
+     fmt.Printf("%d, %#x, %b", x, x, x)
+    }
+
+# Nível 2 - 2
+
+    - Escreva expressões utilizando os operadores, e atribua seus valores a variáveis.
+    - Demonstre estes valores.
+
+## Solução Ex.2
+
+    func main() {
+     a := (10 == 100) // -> false
+     b := (10 != 100) // -> true
+     c := (10 <= 100) // -> true
+     d := (10 < 100)  // -> true
+     e := (10 >= 100) // -> false
+     f := (10 > 100)  // -> false
+     fmt.Printf("%v\n%v\n%v\n%v\n%v\n%v\n", a, b, c, d, e, f)
+    }
+
+# Nível 2-3
+
+- Crie constantes tipadas e não-tipadas.
+- Demonstre seus valores.
+
+## Solução Ex.3
+
+    const x int = 10
+    const y = 10
+
+    func main() {
+     fmt.Println(x, y)
+    }
+
+# Nível 2-4
+
+    - Crie um programa que:
+    - Atribua um valor int a uma variável
+    - Demonstre este valor em decimal, binário e hexadecimal
+    - Desloque os bits dessa variável 1 para a esquerda, e atribua o resultado a outra variável
+    - Demonstre esta outra variável em decimal, binário e hexadecimal
+
+## Solução Ex.4
+
+    func main() {
+     x := 200
+     fmt.Printf("%d\t%b\t%#x\n", x, x, x)
+     y := x << 1
+     fmt.Printf("%d\t%b\t%#x", y, y, y)
+    }
+
+# Nível 2-5
+
+    - Crie uma variável de tipo string utilizando uma raw string literal.
+    - Demonstre-a.
+
+## Solução Ex.5
+
+    func main() {
+     x := `As operárias são livres
+              Os zangões também voam
+               Mas a rainha é escrava`
+     fmt.Println(x)
+    }
+
+# Nível 2-6
+
+    - Utilizando iota, crie 4 constantes cujos valores sejam os próximos 4 anos.
+    - Demonstre estes valores.
+
+## Solução Ex.6
+
+    const (
+     _ = 2022 + iota
+     b
+     c
+     d
+     e
+    )
+
+    func main() {
+     fmt.Println(b, c, d, e)
+    }

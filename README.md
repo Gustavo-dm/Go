@@ -103,8 +103,7 @@ var d bool`
     - func Fprintf(w io.Writer, format string, a ...interface{}) (n int, err error)
     - func Fprintln(w io.Writer, a ...interface{}) (n int, err error)
 
-
-## 03 - Exercicios 
+## 03 - Exercicios -> Exercicios.md
 
 ## 04 – Fundamentos da Programação
 
